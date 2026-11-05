@@ -1,0 +1,26 @@
+held_out_fold,gutenberg_id,author_key,author,title,word_count,processed_path,source_url
+1,58866,agatha_christie,Agatha Christie,The Murder on the Links,65051,data/processed_books/agatha_christie/books/58866_the_murder_on_the_links.txt,https://www.gutenberg.org/ebooks/58866
+1,2097,arthur_conan_doyle,Arthur Conan Doyle,The Sign of the Four,43126,data/processed_books/arthur_conan_doyle/books/2097_the_sign_of_the_four.txt,https://www.gutenberg.org/ebooks/2097
+1,24022,charles_dickens,Charles Dickens,A Christmas Carol,28707,data/processed_books/charles_dickens/books/24022_a_christmas_carol.txt,https://www.gutenberg.org/ebooks/24022
+1,158,jane_austen,Jane Austen,Emma,160420,data/processed_books/jane_austen/books/158_emma.txt,https://www.gutenberg.org/ebooks/158
+1,1514,william_shakespeare,William Shakespeare,A Midsummer Night's Dream,17170,data/processed_books/william_shakespeare/books/1514_a_midsummer_night_s_dream.txt,https://www.gutenberg.org/ebooks/1514
+2,61168,agatha_christie,Agatha Christie,The Man in the Brown Suit,75817,data/processed_books/agatha_christie/books/61168_the_man_in_the_brown_suit.txt,https://www.gutenberg.org/ebooks/61168
+2,108,arthur_conan_doyle,Arthur Conan Doyle,The Return of Sherlock Holmes,112429,data/processed_books/arthur_conan_doyle/books/108_the_return_of_sherlock_holmes.txt,https://www.gutenberg.org/ebooks/108
+2,766,charles_dickens,Charles Dickens,David Copperfield,354254,data/processed_books/charles_dickens/books/766_david_copperfield.txt,https://www.gutenberg.org/ebooks/766
+2,141,jane_austen,Jane Austen,Mansfield Park,159906,data/processed_books/jane_austen/books/141_mansfield_park.txt,https://www.gutenberg.org/ebooks/141
+2,1533,william_shakespeare,William Shakespeare,Macbeth,18223,data/processed_books/william_shakespeare/books/1533_macbeth.txt,https://www.gutenberg.org/ebooks/1533
+3,61262,agatha_christie,Agatha Christie,Poirot Investigates,52797,data/processed_books/agatha_christie/books/61262_poirot_investigates.txt,https://www.gutenberg.org/ebooks/61262
+3,834,arthur_conan_doyle,Arthur Conan Doyle,The Memoirs of Sherlock Holmes,95598,data/processed_books/arthur_conan_doyle/books/834_the_memoirs_of_sherlock_holmes.txt,https://www.gutenberg.org/ebooks/834
+3,730,charles_dickens,Charles Dickens,Oliver Twist,157795,data/processed_books/charles_dickens/books/730_oliver_twist.txt,https://www.gutenberg.org/ebooks/730
+3,42671,jane_austen,Jane Austen,Pride and Prejudice,122166,data/processed_books/jane_austen/books/42671_pride_and_prejudice.txt,https://www.gutenberg.org/ebooks/42671
+3,23042,william_shakespeare,William Shakespeare,The Tempest,22227,data/processed_books/william_shakespeare/books/23042_the_tempest.txt,https://www.gutenberg.org/ebooks/23042
+4,75288,agatha_christie,Agatha Christie,The Seven Dials Mystery,65151,data/processed_books/agatha_christie/books/75288_the_seven_dials_mystery.txt,https://www.gutenberg.org/ebooks/75288
+4,3289,arthur_conan_doyle,Arthur Conan Doyle,The Valley of Fear,57880,data/processed_books/arthur_conan_doyle/books/3289_the_valley_of_fear.txt,https://www.gutenberg.org/ebooks/3289
+4,1023,charles_dickens,Charles Dickens,Bleak House,354388,data/processed_books/charles_dickens/books/1023_bleak_house.txt,https://www.gutenberg.org/ebooks/1023
+4,105,jane_austen,Jane Austen,Persuasion,83351,data/processed_books/jane_austen/books/105_persuasion.txt,https://www.gutenberg.org/ebooks/105
+4,1524,william_shakespeare,William Shakespeare,"Hamlet, Prince of Denmark",31966,data/processed_books/william_shakespeare/books/1524_hamlet_prince_of_denmark.txt,https://www.gutenberg.org/ebooks/1524
+5,1155,agatha_christie,Agatha Christie,The Secret Adversary,75259,data/processed_books/agatha_christie/books/1155_the_secret_adversary.txt,https://www.gutenberg.org/ebooks/1155
+5,48320,arthur_conan_doyle,Arthur Conan Doyle,The Adventures of Sherlock Holmes,104726,data/processed_books/arthur_conan_doyle/books/48320_the_adventures_of_sherlock_holmes.txt,https://www.gutenberg.org/ebooks/48320
+5,786,charles_dickens,Charles Dickens,Hard Times,103481,data/processed_books/charles_dickens/books/786_hard_times.txt,https://www.gutenberg.org/ebooks/786
+5,121,jane_austen,Jane Austen,Northanger Abbey,77325,data/processed_books/jane_austen/books/121_northanger_abbey.txt,https://www.gutenberg.org/ebooks/121
+5,1531,william_shakespeare,William Shakespeare,"Othello, the Moor of Venice",27924,data/processed_books/william_shakespeare/books/1531_othello_the_moor_of_venice.txt,https://www.gutenberg.org/ebooks/1531

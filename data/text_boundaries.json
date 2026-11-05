@@ -1,0 +1,100 @@
+{
+  "1155": {
+    "start_pattern": "(?im)^PROLOGUE\\s*$",
+    "start_occurrence": 2
+  },
+  "58866": {
+    "start_pattern": "(?im)^[ \\t]*1[ \\t]+A Fellow Traveller[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "61168": {
+    "start_pattern": "(?im)^PROLOGUE\\s*$",
+    "end_pattern": "(?im)^THE END[ \\t]*$"
+  },
+  "61262": {
+    "start_pattern": "(?im)^The Adventure of .+Western Star.*$",
+    "end_pattern": "(?im)^THE END[ \\t]*$"
+  },
+  "75288": {
+    "start_pattern": "(?im)^CHAPTER I\\s*$"
+  },
+  "108": {
+    "start_pattern": "(?im)^THE ADVENTURE OF THE EMPTY HOUSE[ \\t]*$",
+    "start_occurrence": 2,
+    "end_pattern": "(?im)^THE END[ \\t]*$"
+  },
+  "48320": {
+    "start_pattern": "(?im)^A SCANDAL IN BOHEMIA[ \\t]*$",
+    "end_pattern": "(?im)^THE END[ \\t]*$"
+  },
+  "3289": {
+    "start_pattern": "(?im)^PART I[ \\t]*$"
+  },
+  "2097": {
+    "start_pattern": "(?im)^Chapter I[ \\t]*$"
+  },
+  "834": {
+    "start_pattern": "(?im)^I\\. Silver Blaze[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "786": {
+    "start_pattern": "(?im)^BOOK THE FIRST[ \\t]*$",
+    "end_pattern": "(?im)^FOOTNOTES[ \\t]*$"
+  },
+  "24022": {
+    "start_pattern": "(?im)^STAVE ONE[ \\t]*$",
+    "end_pattern": "(?im)^\\|Transcriber's note:"
+  },
+  "1023": {
+    "start_pattern": "(?im)^CHAPTER I[ \\t]*$"
+  },
+  "730": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$"
+  },
+  "766": {
+    "start_pattern": "(?im)^CHAPTER 1\\. I AM BORN[ \\t]*$"
+  },
+  "105": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$",
+    "start_occurrence": 2,
+    "end_pattern": "(?im)^Finis\\.?[ \\t]*$"
+  },
+  "121": {
+    "start_pattern": "(?im)^CHAPTER 1[ \\t]*$",
+    "start_occurrence": 2,
+    "end_pattern": "(?im)^A NOTE ON THE TEXT[ \\t]*$"
+  },
+  "141": {
+    "start_pattern": "(?im)^CHAPTER I[ \\t]*$",
+    "start_occurrence": 2,
+    "end_pattern": "(?im)^FINIS\\.?[ \\t]*$"
+  },
+  "42671": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$",
+    "end_pattern": "(?im)^Transcriber's note:",
+    "end_occurrence": 1
+  },
+  "158": {
+    "start_pattern": "(?im)^VOLUME I[ \\t]*$"
+  },
+  "23042": {
+    "start_pattern": "(?im)^ACT I\\.[ \\t]*$",
+    "end_pattern": "(?im)^Notes: Epilogue\\.[ \\t]*$"
+  },
+  "1514": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "1524": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "1531": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "1533": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
+  }
+}

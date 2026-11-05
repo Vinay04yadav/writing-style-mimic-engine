@@ -21,6 +21,7 @@ __pycache__/
 # Add exceptions below if you have SMALL sample data files you WANT to track
 data/raw/
 data/processed/
+data/processed_books/
 # Example Exception (if you had a small sample):
 # !data/processed/samples/
 
@@ -36,6 +37,9 @@ models/
 
 # Weights & Biases local files (if used)
 wandb/
+
+# Private project change log (keep local; do not push to GitHub)
+PROJECT_CHANGELOG.private.md
 
 # Large files downloaded by scripts (if any outside data/)
 # *.zip

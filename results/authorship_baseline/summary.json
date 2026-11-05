@@ -1,0 +1,134 @@
+{
+  "model": "word + character TF-IDF with LinearSVC",
+  "evaluation": "five-fold grouped by complete book; one held-out book per author per fold",
+  "seed": 20261106,
+  "chunk_whitespace_tokens": 500,
+  "chunks_per_book": 25,
+  "included_books": 25,
+  "authors": [
+    "agatha_christie",
+    "arthur_conan_doyle",
+    "charles_dickens",
+    "jane_austen",
+    "william_shakespeare"
+  ],
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "chunk_accuracy": 0.992,
+      "chunk_macro_f1": 0.9919967987194879,
+      "book_accuracy": 1.0,
+      "book_macro_f1": 1.0
+    },
+    {
+      "fold": 2,
+      "chunk_accuracy": 0.984,
+      "chunk_macro_f1": 0.9838235294117647,
+      "book_accuracy": 1.0,
+      "book_macro_f1": 1.0
+    },
+    {
+      "fold": 3,
+      "chunk_accuracy": 0.968,
+      "chunk_macro_f1": 0.9683375950853155,
+      "book_accuracy": 1.0,
+      "book_macro_f1": 1.0
+    },
+    {
+      "fold": 4,
+      "chunk_accuracy": 0.896,
+      "chunk_macro_f1": 0.8956901688182721,
+      "book_accuracy": 1.0,
+      "book_macro_f1": 1.0
+    },
+    {
+      "fold": 5,
+      "chunk_accuracy": 0.944,
+      "chunk_macro_f1": 0.9436584275913937,
+      "book_accuracy": 1.0,
+      "book_macro_f1": 1.0
+    }
+  ],
+  "out_of_fold_chunk_metrics": {
+    "accuracy": 0.9568,
+    "macro_f1": 0.9566700491218099
+  },
+  "out_of_fold_book_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0
+  },
+  "chunk_confusion_matrix": [
+    [
+      117,
+      4,
+      3,
+      1,
+      0
+    ],
+    [
+      6,
+      118,
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      0,
+      113,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      125,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      125
+    ]
+  ],
+  "book_confusion_matrix": [
+    [
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ]
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "gutenberg_id": 1155,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Secret Adversary",
+    "source_url": "https://www.gutenberg.org/ebooks/1155",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 58866,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Murder on the Links",
+    "source_url": "https://www.gutenberg.org/ebooks/58866",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 61168,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Man in the Brown Suit",
+    "source_url": "https://www.gutenberg.org/ebooks/61168",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 61262,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "Poirot Investigates",
+    "source_url": "https://www.gutenberg.org/ebooks/61262",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 75288,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Seven Dials Mystery",
+    "source_url": "https://www.gutenberg.org/ebooks/75288",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 108,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Return of Sherlock Holmes",
+    "source_url": "https://www.gutenberg.org/ebooks/108",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 48320,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Adventures of Sherlock Holmes",
+    "source_url": "https://www.gutenberg.org/ebooks/48320",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 3289,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Valley of Fear",
+    "source_url": "https://www.gutenberg.org/ebooks/3289",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 2097,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Sign of the Four",
+    "source_url": "https://www.gutenberg.org/ebooks/2097",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 834,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Memoirs of Sherlock Holmes",
+    "source_url": "https://www.gutenberg.org/ebooks/834",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 786,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "Hard Times",
+    "source_url": "https://www.gutenberg.org/ebooks/786",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 24022,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "A Christmas Carol",
+    "source_url": "https://www.gutenberg.org/ebooks/24022",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 1023,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "Bleak House",
+    "source_url": "https://www.gutenberg.org/ebooks/1023",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 730,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "Oliver Twist",
+    "source_url": "https://www.gutenberg.org/ebooks/730",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 766,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "David Copperfield",
+    "source_url": "https://www.gutenberg.org/ebooks/766",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 105,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Persuasion",
+    "source_url": "https://www.gutenberg.org/ebooks/105",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 121,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Northanger Abbey",
+    "source_url": "https://www.gutenberg.org/ebooks/121",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 141,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Mansfield Park",
+    "source_url": "https://www.gutenberg.org/ebooks/141",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 42671,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Pride and Prejudice",
+    "source_url": "https://www.gutenberg.org/ebooks/42671",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 158,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Emma",
+    "source_url": "https://www.gutenberg.org/ebooks/158",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 23042,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "The Tempest",
+    "source_url": "https://www.gutenberg.org/ebooks/23042",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 1514,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "A Midsummer Night's Dream",
+    "source_url": "https://www.gutenberg.org/ebooks/1514",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 1524,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "Hamlet, Prince of Denmark",
+    "source_url": "https://www.gutenberg.org/ebooks/1524",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 1531,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "Othello, the Moor of Venice",
+    "source_url": "https://www.gutenberg.org/ebooks/1531",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 1533,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "Macbeth",
+    "source_url": "https://www.gutenberg.org/ebooks/1533",
+    "include_for_model": true
+  },
+  {
+    "gutenberg_id": 16966,
+    "author_key": "william_shakespeare",
+    "author": "A. C. Bradley",
+    "title": "Shakespearean Tragedy",
+    "source_url": "https://www.gutenberg.org/ebooks/16966",
+    "include_for_model": false,
+    "exclusion_reason": "Literary criticism by A. C. Bradley, not text written by William Shakespeare."
+  }
+]

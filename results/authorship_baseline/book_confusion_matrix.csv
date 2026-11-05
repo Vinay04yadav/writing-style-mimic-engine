@@ -1,0 +1,6 @@
+true_author,agatha_christie,arthur_conan_doyle,charles_dickens,jane_austen,william_shakespeare
+agatha_christie,5,0,0,0,0
+arthur_conan_doyle,0,5,0,0,0
+charles_dickens,0,0,5,0,0
+jane_austen,0,0,0,5,0
+william_shakespeare,0,0,0,0,5

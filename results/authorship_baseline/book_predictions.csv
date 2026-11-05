@@ -1,0 +1,26 @@
+fold,gutenberg_id,title,true_author,predicted_author,correct
+1,158,Emma,jane_austen,jane_austen,1
+1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+2,141,Mansfield Park,jane_austen,jane_austen,1
+2,766,David Copperfield,charles_dickens,charles_dickens,1
+2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+3,730,Oliver Twist,charles_dickens,charles_dickens,1
+3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+4,105,Persuasion,jane_austen,jane_austen,1
+4,1023,Bleak House,charles_dickens,charles_dickens,1
+4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+5,121,Northanger Abbey,jane_austen,jane_austen,1
+5,786,Hard Times,charles_dickens,charles_dickens,1
+5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
