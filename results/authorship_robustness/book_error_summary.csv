@@ -1,0 +1,51 @@
+chunk_words,chunks_per_book,gutenberg_id,title,author,tested_chunks_across_seeds,chunk_errors,chunk_error_rate,seeds_with_at_least_one_error
+500,25,105,Persuasion,jane_austen,125,0,0.0,0
+500,25,108,The Return of Sherlock Holmes,arthur_conan_doyle,125,0,0.0,0
+500,25,121,Northanger Abbey,jane_austen,125,1,0.008,1
+500,25,141,Mansfield Park,jane_austen,125,0,0.0,0
+500,25,158,Emma,jane_austen,125,0,0.0,0
+500,25,730,Oliver Twist,charles_dickens,125,18,0.144,5
+500,25,766,David Copperfield,charles_dickens,125,8,0.064,4
+500,25,786,Hard Times,charles_dickens,125,7,0.056,4
+500,25,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,125,2,0.016,2
+500,25,1023,Bleak House,charles_dickens,125,39,0.312,5
+500,25,1155,The Secret Adversary,agatha_christie,125,5,0.04,2
+500,25,1514,A Midsummer Night's Dream,william_shakespeare,125,0,0.0,0
+500,25,1524,"Hamlet, Prince of Denmark",william_shakespeare,125,0,0.0,0
+500,25,1531,"Othello, the Moor of Venice",william_shakespeare,125,0,0.0,0
+500,25,1533,Macbeth,william_shakespeare,125,0,0.0,0
+500,25,2097,The Sign of the Four,arthur_conan_doyle,125,0,0.0,0
+500,25,3289,The Valley of Fear,arthur_conan_doyle,125,24,0.192,5
+500,25,23042,The Tempest,william_shakespeare,125,0,0.0,0
+500,25,24022,A Christmas Carol,charles_dickens,125,9,0.072,4
+500,25,42671,Pride and Prejudice,jane_austen,125,0,0.0,0
+500,25,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,125,4,0.032,3
+500,25,58866,The Murder on the Links,agatha_christie,125,1,0.008,1
+500,25,61168,The Man in the Brown Suit,agatha_christie,125,11,0.088,5
+500,25,61262,Poirot Investigates,agatha_christie,125,6,0.048,4
+500,25,75288,The Seven Dials Mystery,agatha_christie,125,11,0.088,4
+1000,10,105,Persuasion,jane_austen,50,0,0.0,0
+1000,10,108,The Return of Sherlock Holmes,arthur_conan_doyle,50,0,0.0,0
+1000,10,121,Northanger Abbey,jane_austen,50,0,0.0,0
+1000,10,141,Mansfield Park,jane_austen,50,0,0.0,0
+1000,10,158,Emma,jane_austen,50,0,0.0,0
+1000,10,730,Oliver Twist,charles_dickens,50,7,0.14,4
+1000,10,766,David Copperfield,charles_dickens,50,3,0.06,2
+1000,10,786,Hard Times,charles_dickens,50,1,0.02,1
+1000,10,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,50,1,0.02,1
+1000,10,1023,Bleak House,charles_dickens,50,14,0.28,5
+1000,10,1155,The Secret Adversary,agatha_christie,50,0,0.0,0
+1000,10,1514,A Midsummer Night's Dream,william_shakespeare,50,0,0.0,0
+1000,10,1524,"Hamlet, Prince of Denmark",william_shakespeare,50,0,0.0,0
+1000,10,1531,"Othello, the Moor of Venice",william_shakespeare,50,0,0.0,0
+1000,10,1533,Macbeth,william_shakespeare,50,0,0.0,0
+1000,10,2097,The Sign of the Four,arthur_conan_doyle,50,0,0.0,0
+1000,10,3289,The Valley of Fear,arthur_conan_doyle,50,7,0.14,3
+1000,10,23042,The Tempest,william_shakespeare,50,0,0.0,0
+1000,10,24022,A Christmas Carol,charles_dickens,50,0,0.0,0
+1000,10,42671,Pride and Prejudice,jane_austen,50,0,0.0,0
+1000,10,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,50,0,0.0,0
+1000,10,58866,The Murder on the Links,agatha_christie,50,0,0.0,0
+1000,10,61168,The Man in the Brown Suit,agatha_christie,50,2,0.04,2
+1000,10,61262,Poirot Investigates,agatha_christie,50,3,0.06,3
+1000,10,75288,The Seven Dials Mystery,agatha_christie,50,5,0.1,3

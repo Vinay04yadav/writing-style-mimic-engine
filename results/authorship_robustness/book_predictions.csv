@@ -1,0 +1,251 @@
+chunk_words,chunks_per_book,sample_seed,fold,gutenberg_id,title,true_author,predicted_author,correct
+500,25,20261106,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+500,25,20261106,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,20261106,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+500,25,20261106,1,158,Emma,jane_austen,jane_austen,1
+500,25,20261106,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+500,25,20261106,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+500,25,20261106,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,20261106,2,766,David Copperfield,charles_dickens,charles_dickens,1
+500,25,20261106,2,141,Mansfield Park,jane_austen,jane_austen,1
+500,25,20261106,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+500,25,20261106,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+500,25,20261106,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,20261106,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+500,25,20261106,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+500,25,20261106,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+500,25,20261106,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+500,25,20261106,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,20261106,4,1023,Bleak House,charles_dickens,charles_dickens,1
+500,25,20261106,4,105,Persuasion,jane_austen,jane_austen,1
+500,25,20261106,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+500,25,20261106,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+500,25,20261106,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,20261106,5,786,Hard Times,charles_dickens,charles_dickens,1
+500,25,20261106,5,121,Northanger Abbey,jane_austen,jane_austen,1
+500,25,20261106,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+500,25,42,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+500,25,42,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,42,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+500,25,42,1,158,Emma,jane_austen,jane_austen,1
+500,25,42,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+500,25,42,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+500,25,42,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,42,2,766,David Copperfield,charles_dickens,charles_dickens,1
+500,25,42,2,141,Mansfield Park,jane_austen,jane_austen,1
+500,25,42,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+500,25,42,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+500,25,42,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,42,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+500,25,42,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+500,25,42,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+500,25,42,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+500,25,42,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,42,4,1023,Bleak House,charles_dickens,charles_dickens,1
+500,25,42,4,105,Persuasion,jane_austen,jane_austen,1
+500,25,42,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+500,25,42,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+500,25,42,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,42,5,786,Hard Times,charles_dickens,charles_dickens,1
+500,25,42,5,121,Northanger Abbey,jane_austen,jane_austen,1
+500,25,42,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+500,25,2026,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+500,25,2026,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2026,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+500,25,2026,1,158,Emma,jane_austen,jane_austen,1
+500,25,2026,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+500,25,2026,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+500,25,2026,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2026,2,766,David Copperfield,charles_dickens,charles_dickens,1
+500,25,2026,2,141,Mansfield Park,jane_austen,jane_austen,1
+500,25,2026,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+500,25,2026,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+500,25,2026,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2026,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+500,25,2026,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+500,25,2026,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+500,25,2026,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+500,25,2026,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2026,4,1023,Bleak House,charles_dickens,charles_dickens,1
+500,25,2026,4,105,Persuasion,jane_austen,jane_austen,1
+500,25,2026,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+500,25,2026,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+500,25,2026,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2026,5,786,Hard Times,charles_dickens,charles_dickens,1
+500,25,2026,5,121,Northanger Abbey,jane_austen,jane_austen,1
+500,25,2026,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+500,25,7,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+500,25,7,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,7,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+500,25,7,1,158,Emma,jane_austen,jane_austen,1
+500,25,7,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+500,25,7,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+500,25,7,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,7,2,766,David Copperfield,charles_dickens,charles_dickens,1
+500,25,7,2,141,Mansfield Park,jane_austen,jane_austen,1
+500,25,7,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+500,25,7,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+500,25,7,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,7,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+500,25,7,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+500,25,7,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+500,25,7,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+500,25,7,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,7,4,1023,Bleak House,charles_dickens,charles_dickens,1
+500,25,7,4,105,Persuasion,jane_austen,jane_austen,1
+500,25,7,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+500,25,7,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+500,25,7,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,7,5,786,Hard Times,charles_dickens,charles_dickens,1
+500,25,7,5,121,Northanger Abbey,jane_austen,jane_austen,1
+500,25,7,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+500,25,8675309,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+500,25,8675309,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,8675309,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+500,25,8675309,1,158,Emma,jane_austen,jane_austen,1
+500,25,8675309,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+500,25,8675309,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+500,25,8675309,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,8675309,2,766,David Copperfield,charles_dickens,charles_dickens,1
+500,25,8675309,2,141,Mansfield Park,jane_austen,jane_austen,1
+500,25,8675309,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+500,25,8675309,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+500,25,8675309,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,8675309,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+500,25,8675309,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+500,25,8675309,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+500,25,8675309,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+500,25,8675309,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,8675309,4,1023,Bleak House,charles_dickens,charles_dickens,1
+500,25,8675309,4,105,Persuasion,jane_austen,jane_austen,1
+500,25,8675309,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+500,25,8675309,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+500,25,8675309,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,8675309,5,786,Hard Times,charles_dickens,charles_dickens,1
+500,25,8675309,5,121,Northanger Abbey,jane_austen,jane_austen,1
+500,25,8675309,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+1000,10,20261106,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+1000,10,20261106,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,20261106,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1000,10,20261106,1,158,Emma,jane_austen,jane_austen,1
+1000,10,20261106,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1000,10,20261106,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+1000,10,20261106,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,20261106,2,766,David Copperfield,charles_dickens,charles_dickens,1
+1000,10,20261106,2,141,Mansfield Park,jane_austen,jane_austen,1
+1000,10,20261106,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+1000,10,20261106,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+1000,10,20261106,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,20261106,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+1000,10,20261106,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+1000,10,20261106,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+1000,10,20261106,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+1000,10,20261106,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,20261106,4,1023,Bleak House,charles_dickens,charles_dickens,1
+1000,10,20261106,4,105,Persuasion,jane_austen,jane_austen,1
+1000,10,20261106,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+1000,10,20261106,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+1000,10,20261106,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,20261106,5,786,Hard Times,charles_dickens,charles_dickens,1
+1000,10,20261106,5,121,Northanger Abbey,jane_austen,jane_austen,1
+1000,10,20261106,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+1000,10,42,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+1000,10,42,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,42,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1000,10,42,1,158,Emma,jane_austen,jane_austen,1
+1000,10,42,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1000,10,42,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+1000,10,42,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,42,2,766,David Copperfield,charles_dickens,charles_dickens,1
+1000,10,42,2,141,Mansfield Park,jane_austen,jane_austen,1
+1000,10,42,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+1000,10,42,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+1000,10,42,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,42,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+1000,10,42,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+1000,10,42,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+1000,10,42,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+1000,10,42,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,42,4,1023,Bleak House,charles_dickens,charles_dickens,1
+1000,10,42,4,105,Persuasion,jane_austen,jane_austen,1
+1000,10,42,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+1000,10,42,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+1000,10,42,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,42,5,786,Hard Times,charles_dickens,charles_dickens,1
+1000,10,42,5,121,Northanger Abbey,jane_austen,jane_austen,1
+1000,10,42,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+1000,10,2026,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+1000,10,2026,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2026,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1000,10,2026,1,158,Emma,jane_austen,jane_austen,1
+1000,10,2026,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1000,10,2026,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+1000,10,2026,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2026,2,766,David Copperfield,charles_dickens,charles_dickens,1
+1000,10,2026,2,141,Mansfield Park,jane_austen,jane_austen,1
+1000,10,2026,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+1000,10,2026,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+1000,10,2026,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2026,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+1000,10,2026,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+1000,10,2026,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+1000,10,2026,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+1000,10,2026,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2026,4,1023,Bleak House,charles_dickens,charles_dickens,1
+1000,10,2026,4,105,Persuasion,jane_austen,jane_austen,1
+1000,10,2026,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+1000,10,2026,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+1000,10,2026,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2026,5,786,Hard Times,charles_dickens,charles_dickens,1
+1000,10,2026,5,121,Northanger Abbey,jane_austen,jane_austen,1
+1000,10,2026,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+1000,10,7,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+1000,10,7,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,7,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1000,10,7,1,158,Emma,jane_austen,jane_austen,1
+1000,10,7,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1000,10,7,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+1000,10,7,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,7,2,766,David Copperfield,charles_dickens,charles_dickens,1
+1000,10,7,2,141,Mansfield Park,jane_austen,jane_austen,1
+1000,10,7,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+1000,10,7,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+1000,10,7,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,7,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+1000,10,7,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+1000,10,7,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+1000,10,7,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+1000,10,7,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,7,4,1023,Bleak House,charles_dickens,charles_dickens,1
+1000,10,7,4,105,Persuasion,jane_austen,jane_austen,1
+1000,10,7,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+1000,10,7,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+1000,10,7,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,7,5,786,Hard Times,charles_dickens,charles_dickens,1
+1000,10,7,5,121,Northanger Abbey,jane_austen,jane_austen,1
+1000,10,7,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1
+1000,10,8675309,1,58866,The Murder on the Links,agatha_christie,agatha_christie,1
+1000,10,8675309,1,2097,The Sign of the Four,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,8675309,1,24022,A Christmas Carol,charles_dickens,charles_dickens,1
+1000,10,8675309,1,158,Emma,jane_austen,jane_austen,1
+1000,10,8675309,1,1514,A Midsummer Night's Dream,william_shakespeare,william_shakespeare,1
+1000,10,8675309,2,61168,The Man in the Brown Suit,agatha_christie,agatha_christie,1
+1000,10,8675309,2,108,The Return of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,8675309,2,766,David Copperfield,charles_dickens,charles_dickens,1
+1000,10,8675309,2,141,Mansfield Park,jane_austen,jane_austen,1
+1000,10,8675309,2,1533,Macbeth,william_shakespeare,william_shakespeare,1
+1000,10,8675309,3,61262,Poirot Investigates,agatha_christie,agatha_christie,1
+1000,10,8675309,3,834,The Memoirs of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,8675309,3,730,Oliver Twist,charles_dickens,charles_dickens,1
+1000,10,8675309,3,42671,Pride and Prejudice,jane_austen,jane_austen,1
+1000,10,8675309,3,23042,The Tempest,william_shakespeare,william_shakespeare,1
+1000,10,8675309,4,75288,The Seven Dials Mystery,agatha_christie,agatha_christie,1
+1000,10,8675309,4,3289,The Valley of Fear,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,8675309,4,1023,Bleak House,charles_dickens,charles_dickens,1
+1000,10,8675309,4,105,Persuasion,jane_austen,jane_austen,1
+1000,10,8675309,4,1524,"Hamlet, Prince of Denmark",william_shakespeare,william_shakespeare,1
+1000,10,8675309,5,1155,The Secret Adversary,agatha_christie,agatha_christie,1
+1000,10,8675309,5,48320,The Adventures of Sherlock Holmes,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,8675309,5,786,Hard Times,charles_dickens,charles_dickens,1
+1000,10,8675309,5,121,Northanger Abbey,jane_austen,jane_austen,1
+1000,10,8675309,5,1531,"Othello, the Moor of Venice",william_shakespeare,william_shakespeare,1

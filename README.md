@@ -66,7 +66,12 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/tune_chunk_parameters.py
     ```
     This holds combined TF-IDF + LinearSVC fixed and compares chunk sizes/counts on the same book folds. Results are written to `results/chunk_parameter_comparison/`.
-7.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
+7.  **Check Sampling Robustness and Errors:**
+    ```bash
+    python src/analyze_authorship_robustness.py
+    ```
+    This reruns the 500-token x 25 and 1,000-token x 10 settings across five deterministic chunk samples, then writes seed, author, confusion, and per-book error summaries to `results/authorship_robustness/`.
+8.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
 
 The tracked catalog is `data/books.json`. It records the intended source title and author for each Project Gutenberg ID. Shakespearean criticism by A. C. Bradley is explicitly excluded from Shakespeare's corpus; the original raw file is left untouched. Raw and processed corpus files remain Git-ignored.
 
@@ -113,5 +118,18 @@ The leading combined-feature LinearSVC was evaluated with 250-, 500-, and 1,000-
 | 17,000 | — | 34 chunks: 95.39% | 17 chunks: 98.83% |
 
 At 500 tokens per chunk, increasing the sampled count from 5 to 34 raised pooled chunk macro-F1 from 89.52% to 95.39%. Book accuracy stayed at 100% in all 11 settings, so this dataset’s book-level metric is saturated and cannot select a useful chunk count. Longer passages contain more evidence and are an easier classification task; these results do not establish that 1,000 tokens is best for every upload use case. The parameter sweep also reuses the same 25 books/folds for selection, so its scores are exploratory rather than an independent final estimate. Full aggregate, fold, and book predictions are in `results/chunk_parameter_comparison/`.
+
+### Sampling robustness and error analysis
+
+The 500 x 25 and 1,000 x 10 settings were each evaluated over five deterministic chunk samples, with the same held-out books and LinearSVC setup. Seed `20261106` reproduces the original 500 x 25 sample.
+
+| Setting | Mean chunk accuracy (std. dev.) | Mean chunk macro-F1 (std. dev.) | Accuracy range across seeds | Book accuracy in each seed |
+|---|---:|---:|---:|---:|
+| 500 tokens x 25 | 95.33% (0.48 pp) | 95.29% (0.49 pp) | 94.40–95.68% | 100% |
+| 1,000 tokens x 10 | 96.56% (0.41 pp) | 96.54% (0.41 pp) | 96.00–97.20% | 100% |
+
+The passage results are stable across these five samples. All 25 whole-book predictions remained correct for every seed and setting, but this small book-level test remains saturated. The largest recurring chunk confusions were Dickens as Austen (43 errors at 500 tokens; 14 at 1,000) and Doyle as Christie (27 and 7, respectively). The books with the most chunk errors were *Bleak House* (39/125 tested chunks at 500 tokens; 14/50 at 1,000), *The Valley of Fear* (24/125; 7/50), and *Oliver Twist* (18/125; 7/50). A review of representative error passages found ordinary narrative/dialogue text, with no obvious wrapper or label contamination in those examples.
+
+These five samples reuse the same 25 books and book folds; they measure sensitivity to which chunks are sampled, not variation across new books or authors. Full seed-level metrics, chunk predictions, author scores, confusion matrices, and per-book error counts are in `results/authorship_robustness/`.
 
 ## License

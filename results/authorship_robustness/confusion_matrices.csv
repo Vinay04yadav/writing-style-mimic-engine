@@ -1,0 +1,11 @@
+chunk_words,chunks_per_book,true_author,agatha_christie,arthur_conan_doyle,charles_dickens,jane_austen,william_shakespeare
+500,25,agatha_christie,591,21,7,6,0
+500,25,arthur_conan_doyle,27,595,1,2,0
+500,25,charles_dickens,10,27,544,43,1
+500,25,jane_austen,0,1,0,624,0
+500,25,william_shakespeare,0,0,0,0,625
+1000,10,agatha_christie,240,5,4,1,0
+1000,10,arthur_conan_doyle,7,242,1,0,0
+1000,10,charles_dickens,3,8,225,14,0
+1000,10,jane_austen,0,0,0,250,0
+1000,10,william_shakespeare,0,0,0,0,250
