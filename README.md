@@ -56,7 +56,17 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/evaluate_authorship.py
     ```
     Results are written to `results/authorship_baseline/`, including fold metrics, chunk and book predictions, confusion matrices, and a JSON summary.
-5.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
+5.  **Compare Authorship Models:**
+    ```bash
+    python src/compare_authorship_models.py
+    ```
+    This compares word-only, character-only, and combined TF-IDF with LinearSVC, LogisticRegression, and MultinomialNB, using the same book folds and sampled chunks. Results are written to `results/authorship_comparison/`.
+6.  **Compare Chunk Parameters:**
+    ```bash
+    python src/tune_chunk_parameters.py
+    ```
+    This holds combined TF-IDF + LinearSVC fixed and compares chunk sizes/counts on the same book folds. Results are written to `results/chunk_parameter_comparison/`.
+7.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
 
 The tracked catalog is `data/books.json`. It records the intended source title and author for each Project Gutenberg ID. Shakespearean criticism by A. C. Bradley is explicitly excluded from Shakespeare's corpus; the original raw file is left untouched. Raw and processed corpus files remain Git-ignored.
 
@@ -72,5 +82,36 @@ The tracked catalog is `data/books.json`. It records the intended source title a
 - **Artifacts:** see `results/authorship_baseline/summary.json` and the adjacent prediction and confusion-matrix CSV files.
 
 This is an initial baseline, not a final product claim. It has no calibrated confidence or unknown-author rejection yet, and the generation model has not been re-evaluated with this book-level methodology.
+
+### Controlled feature and classifier comparison
+
+All nine configurations below use the same five book-held-out folds, 500-token chunks, and 25 sampled chunks per book. This controls the data split and sampling for the comparison.
+
+| Features | Classifier | Chunk accuracy | Chunk macro-F1 | Book accuracy |
+|---|---|---:|---:|---:|
+| Word + character TF-IDF | LinearSVC | 95.68% | 95.67% | 100% |
+| Word TF-IDF | LinearSVC | 95.36% | 95.35% | 100% |
+| Word + character TF-IDF | LogisticRegression | 94.24% | 94.20% | 100% |
+| Word TF-IDF | LogisticRegression | 93.92% | 93.89% | 100% |
+| Character TF-IDF | LinearSVC | 93.12% | 93.05% | 100% |
+| Word TF-IDF | MultinomialNB | 92.00% | 91.88% | 100% |
+| Character TF-IDF | LogisticRegression | 91.20% | 91.02% | 100% |
+| Word + character TF-IDF | MultinomialNB | 81.28% | 80.07% | 92% |
+| Character TF-IDF | MultinomialNB | 68.64% | 63.61% | 68% |
+
+Combined word+character features with LinearSVC lead among these configurations, but only by 0.32 percentage points of chunk accuracy over word-only LinearSVC. This is a provisional comparison using default settings, one fixed chunk sample, and only 25 books. It does not establish a globally best classifier or optimal chunk size/count. Book accuracy also saturates at 100% for most configurations, so chunk metrics and per-author errors are more informative here. Results and per-fold breakdowns are in `results/authorship_comparison/`.
+
+### Chunk size and sample-count comparison
+
+The leading combined-feature LinearSVC was evaluated with 250-, 500-, and 1,000-token chunks. At matched sampled-token budgets, longer chunks had higher passage-level macro-F1:
+
+| Sampled tokens per book | 250-token chunks | 500-token chunks | 1,000-token chunks |
+|---:|---:|---:|---:|
+| 2,500 | 10 chunks: 86.11% | 5 chunks: 89.52% | — |
+| 5,000 | 20 chunks: 87.56% | 10 chunks: 91.47% | 5 chunks: 95.88% |
+| 10,000 | 40 chunks: 92.54% | 20 chunks: 93.71% | 10 chunks: 97.59% |
+| 17,000 | — | 34 chunks: 95.39% | 17 chunks: 98.83% |
+
+At 500 tokens per chunk, increasing the sampled count from 5 to 34 raised pooled chunk macro-F1 from 89.52% to 95.39%. Book accuracy stayed at 100% in all 11 settings, so this dataset’s book-level metric is saturated and cannot select a useful chunk count. Longer passages contain more evidence and are an easier classification task; these results do not establish that 1,000 tokens is best for every upload use case. The parameter sweep also reuses the same 25 books/folds for selection, so its scores are exploratory rather than an independent final estimate. Full aggregate, fold, and book predictions are in `results/chunk_parameter_comparison/`.
 
 ## License

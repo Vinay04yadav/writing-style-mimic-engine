@@ -1,0 +1,10 @@
+feature_set,classifier,chunk_accuracy,chunk_macro_f1,book_accuracy,book_macro_f1,fold_chunk_accuracy_min,fold_chunk_accuracy_max
+word_only,LinearSVC,0.9536,0.9535060425675248,1.0,1.0,0.912,0.992
+word_only,LogisticRegression,0.9392,0.9389041920604276,1.0,1.0,0.896,0.984
+word_only,MultinomialNB,0.92,0.9187581550557958,1.0,1.0,0.88,0.952
+char_only,LinearSVC,0.9312,0.9305401380160623,1.0,1.0,0.808,0.984
+char_only,LogisticRegression,0.912,0.9102405658762216,1.0,1.0,0.784,0.976
+char_only,MultinomialNB,0.6864,0.636097988033472,0.68,0.6,0.592,0.768
+word_plus_char,LinearSVC,0.9568,0.9566700491218099,1.0,1.0,0.896,0.992
+word_plus_char,LogisticRegression,0.9424,0.9419522996985054,1.0,1.0,0.872,0.984
+word_plus_char,MultinomialNB,0.8128,0.8007276522389827,0.92,0.9136363636363637,0.744,0.864
