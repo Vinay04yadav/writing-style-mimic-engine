@@ -148,4 +148,6 @@ The classifier was trained on the original 25 books and evaluated on ten additio
 
 At 500 tokens, three external chunks were misclassified: two from *The Mysterious Affair at Styles* and one from *Great Expectations*. At 1,000 tokens, one chunk from *Great Expectations* was misclassified. Combining chunk scores gave the correct author for all ten books in both settings. This is encouraging evidence of transfer to new works, but the external set is still small (two books per author), and Shakespeare is represented by plays while most other authors are represented by prose fiction. Treat these as an external check, not a universal accuracy guarantee. Detailed outputs are in `results/external_validation/`.
 
+The representative error passages involve courtroom/family discussion, detective reasoning, and dialogue about social class. They broadly match the internal Dickens/Austen and Christie/Doyle confusion patterns, though this qualitative review does not prove why the classifier erred. See `results/external_validation/error_review.md`; keep this holdout out of training and avoid using it repeatedly to tune choices.
+
 ## License
