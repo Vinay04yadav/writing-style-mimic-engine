@@ -82,6 +82,15 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/train_and_evaluate_generation.py --fold 1
     ```
     This trains one GPT-2 model per author on four books and validates on the fifth book assigned to fold 1. It then scores each author model and base GPT-2 on all five held-out books, producing a cross-author perplexity table. Checkpoints are saved under the ignored `models/` directory; metrics go to `results/generation_baseline/`. This downloads the base `gpt2` checkpoint if it is not cached.
+11. **Prepare a blind generation-quality review** after all five fine-tuned checkpoints exist:
+    ```bash
+    python src/generate_style_eval_samples.py --fold 1
+    ```
+    This generates two samples per shared prompt for each author model and base GPT-2 (60 samples total by default), then writes an anonymous rating packet, private key, and ratings template under `results/generation_baseline/`. Follow [`docs/generation_human_eval.md`](docs/generation_human_eval.md) to collect ratings. Summarize completed ratings with:
+    ```bash
+    python src/summarize_generation_ratings.py --ratings results/generation_baseline/human_ratings_completed.csv
+    ```
+    Generated passages, the key, and ratings are Git-ignored; only aggregate results should be considered for public reporting after review.
 
 The tracked catalog is `data/books.json`. It records the intended source title and author for each Project Gutenberg ID. Shakespearean criticism by A. C. Bradley is explicitly excluded from Shakespeare's corpus; the original raw file is left untouched. Raw and processed corpus files remain Git-ignored.
 
@@ -147,6 +156,8 @@ These five samples reuse the same 25 books and book folds; they measure sensitiv
 The historical notebook fine-tunes a separate GPT-2 model per author, but splits randomly sampled token blocks from each merged author corpus into train and validation. Blocks from the same book can therefore appear on both sides. It logs validation loss but does not produce a consistent book-held-out cross-author perplexity comparison. Its generation review uses a fixed prompt and a few samples, with manually noted coherence issues and basic stylometric comparisons; there are no saved checkpoints in this repository for a reproducible rerun.
 
 `src/train_and_evaluate_generation.py` sets up the next controlled baseline using the per-book corpus and existing fold 1. It uses 512-token blocks that never cross book boundaries, trains each author model on four books, and evaluates on the held-out book. The cross-author table also scores base GPT-2 on the same held-out books. This experiment has not been run in this environment: no model checkpoints are present and neither CUDA nor Apple MPS is available. Run it on a GPU-enabled environment; these results remain preliminary until the training corpus is expanded and a fresh external evaluation is reserved.
+
+The next generation-quality stage is specified in [`docs/generation_human_eval.md`](docs/generation_human_eval.md): matched prompts and decoding settings, blinded outputs, fluency/coherence/topic-fit ratings, and an author-guess measure for fine-tuned models. The sample generator and rating summarizer are implemented, but no checkpoints or human ratings are available yet, so no generation-quality score is claimed.
 
 ### External validation on new books
 

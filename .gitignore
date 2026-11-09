@@ -41,6 +41,14 @@ wandb/
 # Private project change log (keep local; do not push to GitHub)
 PROJECT_CHANGELOG.private.md
 
+# Generated text and blinded human-evaluation data (keep local/private)
+results/generation_baseline/generated_samples.csv
+results/generation_baseline/human_eval_packet.csv
+results/generation_baseline/human_eval_key.csv
+results/generation_baseline/human_ratings_template.csv
+results/generation_baseline/human_ratings_completed.csv
+results/generation_baseline/human_rating_summary.csv
+
 # Large files downloaded by scripts (if any outside data/)
 # *.zip
 # *.tar.gz
