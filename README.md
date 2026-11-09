@@ -77,6 +77,11 @@ This project explores two tasks: identifying an author's writing from a passage 
     ```
     This trains on the original 25 cross-validation books and evaluates on ten separately catalogued books (two per author) that are excluded from the folds and training set. Results are written to `results/external_validation/`.
 9.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
+10. **Train and score the generation baseline** on a GPU-enabled environment:
+    ```bash
+    python src/train_and_evaluate_generation.py --fold 1
+    ```
+    This trains one GPT-2 model per author on four books and validates on the fifth book assigned to fold 1. It then scores each author model and base GPT-2 on all five held-out books, producing a cross-author perplexity table. Checkpoints are saved under the ignored `models/` directory; metrics go to `results/generation_baseline/`. This downloads the base `gpt2` checkpoint if it is not cached.
 
 The tracked catalog is `data/books.json`. It records the intended source title and author for each Project Gutenberg ID. Shakespearean criticism by A. C. Bradley is explicitly excluded from Shakespeare's corpus; the original raw file is left untouched. Raw and processed corpus files remain Git-ignored.
 
@@ -136,6 +141,12 @@ The 500 x 25 and 1,000 x 10 settings were each evaluated over five deterministic
 The passage results are stable across these five samples. All 25 whole-book predictions remained correct for every seed and setting, but this small book-level test remains saturated. The largest recurring chunk confusions were Dickens as Austen (43 errors at 500 tokens; 14 at 1,000) and Doyle as Christie (27 and 7, respectively). The books with the most chunk errors were *Bleak House* (39/125 tested chunks at 500 tokens; 14/50 at 1,000), *The Valley of Fear* (24/125; 7/50), and *Oliver Twist* (18/125; 7/50). A review of representative error passages found ordinary narrative/dialogue text, with no obvious wrapper or label contamination in those examples.
 
 These five samples reuse the same 25 books and book folds; they measure sensitivity to which chunks are sampled, not variation across new books or authors. Full seed-level metrics, chunk predictions, author scores, confusion matrices, and per-book error counts are in `results/authorship_robustness/`.
+
+### Generation evaluation status
+
+The historical notebook fine-tunes a separate GPT-2 model per author, but splits randomly sampled token blocks from each merged author corpus into train and validation. Blocks from the same book can therefore appear on both sides. It logs validation loss but does not produce a consistent book-held-out cross-author perplexity comparison. Its generation review uses a fixed prompt and a few samples, with manually noted coherence issues and basic stylometric comparisons; there are no saved checkpoints in this repository for a reproducible rerun.
+
+`src/train_and_evaluate_generation.py` sets up the next controlled baseline using the per-book corpus and existing fold 1. It uses 512-token blocks that never cross book boundaries, trains each author model on four books, and evaluates on the held-out book. The cross-author table also scores base GPT-2 on the same held-out books. This experiment has not been run in this environment: no model checkpoints are present and neither CUDA nor Apple MPS is available. Run it on a GPU-enabled environment; these results remain preliminary until the training corpus is expanded and a fresh external evaluation is reserved.
 
 ### External validation on new books
 
