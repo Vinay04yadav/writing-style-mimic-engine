@@ -200,6 +200,96 @@
     "include_for_model": true
   },
   {
+    "gutenberg_id": 863,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Mysterious Affair at Styles",
+    "source_url": "https://www.gutenberg.org/ebooks/863",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 65238,
+    "author_key": "agatha_christie",
+    "author": "Agatha Christie",
+    "title": "The Secret of Chimneys",
+    "source_url": "https://www.gutenberg.org/ebooks/65238",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 2852,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "The Hound of the Baskervilles",
+    "source_url": "https://www.gutenberg.org/ebooks/2852",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 244,
+    "author_key": "arthur_conan_doyle",
+    "author": "Arthur Conan Doyle",
+    "title": "A Study in Scarlet",
+    "source_url": "https://www.gutenberg.org/ebooks/244",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 1400,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "Great Expectations",
+    "source_url": "https://www.gutenberg.org/ebooks/1400",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 580,
+    "author_key": "charles_dickens",
+    "author": "Charles Dickens",
+    "title": "The Pickwick Papers",
+    "source_url": "https://www.gutenberg.org/ebooks/580",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 161,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Sense and Sensibility",
+    "source_url": "https://www.gutenberg.org/ebooks/161",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 946,
+    "author_key": "jane_austen",
+    "author": "Jane Austen",
+    "title": "Lady Susan",
+    "source_url": "https://www.gutenberg.org/ebooks/946",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 1532,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "King Lear",
+    "source_url": "https://www.gutenberg.org/ebooks/1532",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
+    "gutenberg_id": 1513,
+    "author_key": "william_shakespeare",
+    "author": "William Shakespeare",
+    "title": "Romeo and Juliet",
+    "source_url": "https://www.gutenberg.org/ebooks/1513",
+    "include_for_model": true,
+    "evaluation_group": "external_validation"
+  },
+  {
     "gutenberg_id": 16966,
     "author_key": "william_shakespeare",
     "author": "A. C. Bradley",

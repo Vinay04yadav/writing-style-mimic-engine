@@ -71,7 +71,12 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/analyze_authorship_robustness.py
     ```
     This reruns the 500-token x 25 and 1,000-token x 10 settings across five deterministic chunk samples, then writes seed, author, confusion, and per-book error summaries to `results/authorship_robustness/`.
-8.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
+8.  **Evaluate on Untouched Books:**
+    ```bash
+    python src/evaluate_external_books.py
+    ```
+    This trains on the original 25 cross-validation books and evaluates on ten separately catalogued books (two per author) that are excluded from the folds and training set. Results are written to `results/external_validation/`.
+9.  **Review Generation Experiments:** The available notebook is `notebooks/NLP_MP_Gem.ipynb`. It is historical and reads the older merged `data/processed/<author>/corpus.txt` files. Its random chunk split is not used for reported authorship results.
 
 The tracked catalog is `data/books.json`. It records the intended source title and author for each Project Gutenberg ID. Shakespearean criticism by A. C. Bradley is explicitly excluded from Shakespeare's corpus; the original raw file is left untouched. Raw and processed corpus files remain Git-ignored.
 
@@ -131,5 +136,16 @@ The 500 x 25 and 1,000 x 10 settings were each evaluated over five deterministic
 The passage results are stable across these five samples. All 25 whole-book predictions remained correct for every seed and setting, but this small book-level test remains saturated. The largest recurring chunk confusions were Dickens as Austen (43 errors at 500 tokens; 14 at 1,000) and Doyle as Christie (27 and 7, respectively). The books with the most chunk errors were *Bleak House* (39/125 tested chunks at 500 tokens; 14/50 at 1,000), *The Valley of Fear* (24/125; 7/50), and *Oliver Twist* (18/125; 7/50). A review of representative error passages found ordinary narrative/dialogue text, with no obvious wrapper or label contamination in those examples.
 
 These five samples reuse the same 25 books and book folds; they measure sensitivity to which chunks are sampled, not variation across new books or authors. Full seed-level metrics, chunk predictions, author scores, confusion matrices, and per-book error counts are in `results/authorship_robustness/`.
+
+### External validation on new books
+
+The classifier was trained on the original 25 books and evaluated on ten additional books held out completely from training and cross-validation: two books per author. The catalog labels them `evaluation_group: external_validation`; `src/build_book_folds.py` excludes that group. The external evaluator checks that training and test IDs do not overlap.
+
+| Model input | Training chunks | External chunks | Chunk accuracy | Chunk macro-F1 | Whole books correct |
+|---|---:|---:|---:|---:|---:|
+| 500 tokens x 25 per book | 625 | 250 | 98.80% | 98.80% | 10/10 |
+| 1,000 tokens x 10 per book | 250 | 100 | 99.00% | 99.00% | 10/10 |
+
+At 500 tokens, three external chunks were misclassified: two from *The Mysterious Affair at Styles* and one from *Great Expectations*. At 1,000 tokens, one chunk from *Great Expectations* was misclassified. Combining chunk scores gave the correct author for all ten books in both settings. This is encouraging evidence of transfer to new works, but the external set is still small (two books per author), and Shakespeare is represented by plays while most other authors are represented by prose fiction. Treat these as an external check, not a universal accuracy guarantee. Detailed outputs are in `results/external_validation/`.
 
 ## License

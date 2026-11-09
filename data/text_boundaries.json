@@ -96,5 +96,41 @@
   "1533": {
     "start_pattern": "(?im)^ACT I[ \\t]*$",
     "start_occurrence": 2
+  },
+  "863": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$"
+  },
+  "65238": {
+    "start_pattern": "(?im)^Anthony Cade Signs on[ \\t]*$",
+    "end_pattern": "(?im)^Obvious typographical errors have been corrected\\.[ \\t]*$"
+  },
+  "2852": {
+    "start_pattern": "(?im)^Chapter 1\\.[ \\t]*$"
+  },
+  "244": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$"
+  },
+  "1400": {
+    "start_pattern": "(?im)^Chapter I\\.[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "580": {
+    "start_pattern": "(?im)^CHAPTER I\\.\\s+THE PICKWICKIANS[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "161": {
+    "start_pattern": "(?im)^CHAPTER I\\.[ \\t]*$"
+  },
+  "946": {
+    "start_pattern": "(?im)^I[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "1532": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
+  },
+  "1513": {
+    "start_pattern": "(?im)^ACT I[ \\t]*$",
+    "start_occurrence": 2
   }
 }

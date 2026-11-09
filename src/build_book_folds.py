@@ -24,7 +24,11 @@ def create_book_folds() -> list[dict]:
             for row in csv.DictReader(manifest_file)
         }
 
-    included = [book for book in catalog if book.get("include_for_model", True)]
+    included = [
+        book for book in catalog
+        if book.get("include_for_model", True)
+        and book.get("evaluation_group", "cross_validation") == "cross_validation"
+    ]
     authors = sorted({book["author_key"] for book in included})
     rows = []
 

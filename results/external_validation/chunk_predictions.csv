@@ -1,0 +1,351 @@
+chunk_words,chunks_per_book,gutenberg_id,title,chunk_index,true_author,predicted_author,correct
+500,25,863,The Mysterious Affair at Styles,58,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,48,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,52,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,60,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,73,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,31,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,96,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,105,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,34,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,85,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,12,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,93,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,62,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,89,agatha_christie,jane_austen,0
+500,25,863,The Mysterious Affair at Styles,57,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,83,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,88,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,69,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,76,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,90,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,68,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,100,agatha_christie,arthur_conan_doyle,0
+500,25,863,The Mysterious Affair at Styles,10,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,1,agatha_christie,agatha_christie,1
+500,25,863,The Mysterious Affair at Styles,81,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,84,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,99,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,104,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,28,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,53,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,102,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,107,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,50,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,67,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,128,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,6,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,46,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,26,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,68,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,106,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,91,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,137,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,2,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,60,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,93,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,115,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,112,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,62,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,110,agatha_christie,agatha_christie,1
+500,25,65238,The Secret of Chimneys,63,agatha_christie,agatha_christie,1
+500,25,2852,The Hound of the Baskervilles,115,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,44,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,109,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,108,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,9,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,97,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,79,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,80,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,38,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,30,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,4,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,36,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,88,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,50,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,90,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,18,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,0,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,23,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,11,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,103,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,22,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,78,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,41,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,34,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,2852,The Hound of the Baskervilles,93,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,80,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,37,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,8,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,54,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,72,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,43,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,78,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,23,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,67,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,31,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,81,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,84,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,63,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,35,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,19,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,69,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,4,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,85,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,24,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,41,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,38,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,16,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,49,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,60,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,244,A Study in Scarlet,5,arthur_conan_doyle,arthur_conan_doyle,1
+500,25,1400,Great Expectations,289,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,307,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,47,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,323,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,135,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,165,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,60,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,68,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,127,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,28,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,145,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,207,charles_dickens,arthur_conan_doyle,0
+500,25,1400,Great Expectations,172,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,350,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,324,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,185,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,218,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,144,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,259,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,117,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,44,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,248,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,312,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,52,charles_dickens,charles_dickens,1
+500,25,1400,Great Expectations,269,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,299,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,556,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,294,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,579,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,224,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,156,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,509,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,291,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,433,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,419,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,342,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,454,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,35,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,378,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,373,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,170,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,128,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,119,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,576,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,578,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,529,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,585,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,99,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,328,charles_dickens,charles_dickens,1
+500,25,580,The Pickwick Papers,262,charles_dickens,charles_dickens,1
+500,25,161,Sense and Sensibility,164,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,187,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,8,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,29,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,47,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,223,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,178,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,49,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,59,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,106,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,23,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,153,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,12,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,157,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,147,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,131,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,11,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,140,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,144,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,40,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,22,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,193,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,110,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,85,jane_austen,jane_austen,1
+500,25,161,Sense and Sensibility,61,jane_austen,jane_austen,1
+500,25,946,Lady Susan,24,jane_austen,jane_austen,1
+500,25,946,Lady Susan,32,jane_austen,jane_austen,1
+500,25,946,Lady Susan,7,jane_austen,jane_austen,1
+500,25,946,Lady Susan,43,jane_austen,jane_austen,1
+500,25,946,Lady Susan,30,jane_austen,jane_austen,1
+500,25,946,Lady Susan,4,jane_austen,jane_austen,1
+500,25,946,Lady Susan,12,jane_austen,jane_austen,1
+500,25,946,Lady Susan,41,jane_austen,jane_austen,1
+500,25,946,Lady Susan,17,jane_austen,jane_austen,1
+500,25,946,Lady Susan,1,jane_austen,jane_austen,1
+500,25,946,Lady Susan,28,jane_austen,jane_austen,1
+500,25,946,Lady Susan,2,jane_austen,jane_austen,1
+500,25,946,Lady Susan,39,jane_austen,jane_austen,1
+500,25,946,Lady Susan,3,jane_austen,jane_austen,1
+500,25,946,Lady Susan,27,jane_austen,jane_austen,1
+500,25,946,Lady Susan,0,jane_austen,jane_austen,1
+500,25,946,Lady Susan,14,jane_austen,jane_austen,1
+500,25,946,Lady Susan,11,jane_austen,jane_austen,1
+500,25,946,Lady Susan,6,jane_austen,jane_austen,1
+500,25,946,Lady Susan,18,jane_austen,jane_austen,1
+500,25,946,Lady Susan,36,jane_austen,jane_austen,1
+500,25,946,Lady Susan,37,jane_austen,jane_austen,1
+500,25,946,Lady Susan,29,jane_austen,jane_austen,1
+500,25,946,Lady Susan,22,jane_austen,jane_austen,1
+500,25,946,Lady Susan,34,jane_austen,jane_austen,1
+500,25,1532,King Lear,3,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,38,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,15,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,21,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,14,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,31,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,5,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,53,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,48,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,35,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,24,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,29,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,28,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,13,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,12,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,6,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,40,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,18,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,20,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,17,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,1,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,46,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,52,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,30,william_shakespeare,william_shakespeare,1
+500,25,1532,King Lear,45,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,13,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,6,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,23,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,32,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,1,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,41,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,38,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,7,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,11,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,36,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,18,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,46,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,5,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,42,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,39,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,40,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,34,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,37,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,12,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,17,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,30,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,49,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,8,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,19,william_shakespeare,william_shakespeare,1
+500,25,1513,Romeo and Juliet,4,william_shakespeare,william_shakespeare,1
+1000,10,863,The Mysterious Affair at Styles,29,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,24,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,26,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,30,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,36,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,15,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,48,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,49,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,17,agatha_christie,agatha_christie,1
+1000,10,863,The Mysterious Affair at Styles,42,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,42,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,49,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,52,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,14,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,26,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,51,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,53,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,25,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,33,agatha_christie,agatha_christie,1
+1000,10,65238,The Secret of Chimneys,64,agatha_christie,agatha_christie,1
+1000,10,2852,The Hound of the Baskervilles,57,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,22,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,54,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,56,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,4,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,48,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,39,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,40,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,19,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,2852,The Hound of the Baskervilles,15,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,40,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,18,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,4,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,27,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,36,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,21,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,11,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,33,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,15,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,244,A Study in Scarlet,41,arthur_conan_doyle,arthur_conan_doyle,1
+1000,10,1400,Great Expectations,144,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,153,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,23,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,161,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,67,charles_dickens,jane_austen,0
+1000,10,1400,Great Expectations,82,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,30,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,34,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,63,charles_dickens,charles_dickens,1
+1000,10,1400,Great Expectations,14,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,149,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,278,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,147,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,289,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,112,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,78,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,254,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,145,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,216,charles_dickens,charles_dickens,1
+1000,10,580,The Pickwick Papers,209,charles_dickens,charles_dickens,1
+1000,10,161,Sense and Sensibility,82,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,93,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,4,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,14,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,23,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,111,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,89,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,24,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,29,jane_austen,jane_austen,1
+1000,10,161,Sense and Sensibility,53,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,12,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,16,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,3,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,20,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,15,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,2,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,6,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,18,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,4,jane_austen,jane_austen,1
+1000,10,946,Lady Susan,11,jane_austen,jane_austen,1
+1000,10,1532,King Lear,1,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,19,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,7,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,10,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,24,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,15,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,2,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,26,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,21,william_shakespeare,william_shakespeare,1
+1000,10,1532,King Lear,17,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,6,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,3,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,11,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,16,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,0,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,19,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,23,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,5,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,9,william_shakespeare,william_shakespeare,1
+1000,10,1513,Romeo and Juliet,20,william_shakespeare,william_shakespeare,1
