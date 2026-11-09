@@ -82,7 +82,13 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/train_and_evaluate_generation.py --fold 1
     ```
     This is the historical GPT-2 full-fine-tuning pilot: four training books and one held-out book per author for fold 1. It produces a within-GPT-2 cross-author likelihood table. Checkpoints are saved under the ignored `models/` directory; metrics go to `results/generation_baseline/`. This downloads the base `gpt2` checkpoint if it is not cached. Run it to validate and time the pipeline; its single-fold scores are exploratory, not final resume results.
-11. **Prepare a blind generation-quality review** after the required model arms exist:
+11. **Prepare an isolated modern-generation environment and smoke-test Qwen3.5:** use a Colab GPU runtime or a separate Python 3.10+ environment. Install the suitable PyTorch build for the runtime, then:
+    ```bash
+    pip install -r requirements-generation.txt
+    python src/smoke_test_modern_generation.py --device cuda
+    ```
+    This downloads Qwen3.5-0.8B-Base, checks a text-only forward pass, performs one synthetic LoRA optimizer step, then checks adapter save/reload and generation. It writes version/device metadata to the ignored `results/generation_baseline/qwen35_smoke_summary.json`. It does not use project books or produce evaluation metrics. Keep this environment separate from `requirements.txt`, whose older pins support the existing authorship pipeline. See [`docs/generation_experiment_plan.md`](docs/generation_experiment_plan.md) before running full experiments.
+12. **Prepare a blind generation-quality review** after the required model arms exist:
     ```bash
     python src/generate_style_eval_samples.py --fold 1
     ```
@@ -157,7 +163,7 @@ The historical notebook fine-tunes a separate GPT-2 model per author, but splits
 
 `src/train_and_evaluate_generation.py` sets up the next controlled baseline using the per-book corpus and existing fold 1. It uses 512-token blocks that never cross book boundaries, trains each author model on four books, and evaluates on the held-out book. The cross-author table also scores base GPT-2 on the same held-out books. This experiment has not been run in this environment: no model checkpoints are present and neither CUDA nor Apple MPS is available. Run it on a GPU-enabled environment; these results remain preliminary until the training corpus is expanded and a fresh external evaluation is reserved.
 
-The revised generation experiment is specified in [`docs/generation_experiment_plan.md`](docs/generation_experiment_plan.md). GPT-2 remains the historical reference. The primary modern comparison is a frozen Qwen3.5-0.8B-Base model given author examples versus the same base model adapted with an author-specific LoRA adapter. This isolates the value of adaptation more clearly than comparing unrelated model checkpoints. The model's hybrid multimodal architecture and newer library requirements add runtime risk, so test a small Colab smoke run and pin the working environment before full training. No generation metrics have been produced yet.
+The revised generation experiment is specified in [`docs/generation_experiment_plan.md`](docs/generation_experiment_plan.md). GPT-2 remains the historical reference. The primary modern comparison is a frozen Qwen3.5-0.8B-Base model given author examples versus the same base model adapted with an author-specific LoRA adapter. This isolates the value of adaptation more clearly than comparing unrelated model checkpoints. The model's hybrid multimodal architecture and newer library requirements add runtime risk, so a separate environment and smoke test are prepared before full training. No generation metrics have been produced yet.
 
 ### External validation on new books
 

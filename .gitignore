@@ -48,6 +48,7 @@ results/generation_baseline/human_eval_key.csv
 results/generation_baseline/human_ratings_template.csv
 results/generation_baseline/human_ratings_completed.csv
 results/generation_baseline/human_rating_summary.csv
+results/generation_baseline/qwen35_smoke_summary.json
 
 # Large files downloaded by scripts (if any outside data/)
 # *.zip

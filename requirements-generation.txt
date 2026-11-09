@@ -1,0 +1,6 @@
+# Isolated modern-generation environment; keep requirements.txt unchanged for
+# the existing authorship/classical NLP pipeline.
+torch>=2.5,<3
+transformers==5.22.2
+peft==0.21.2
+accelerate==1.15.0

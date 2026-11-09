@@ -36,12 +36,13 @@ Use identical prompts and decoding settings wherever the interface permits. Beca
 
 ## Execution order
 
-1. Prepare a separate generation environment so model-support upgrades do not destabilize the existing authorship pipeline.
-2. Run the GPT-2 fold-1 baseline as a pipeline pilot and time the complete run. Do not promise a fixed free-Colab runtime.
-3. Smoke-test Qwen3.5 Base loading, text-only scoring/generation, LoRA target modules, and save/reload behavior. Pin compatible dependencies only after this works.
-4. Run fold-1 Qwen prompt-control and LoRA arms from the same base revision and same training-book boundary.
-5. Add fold-specific attribution scoring and collect the small blind human subset.
-6. Expand the corpus, then run all book folds and reserve newly acquired books for a fresh final external check before publishing resume figures.
+1. Prepare a separate generation environment from `requirements-generation.txt` so model-support upgrades do not destabilize the existing authorship pipeline. It pins Transformers 5.22.2, PEFT 0.21.2, and Accelerate 1.15.0 while requiring PyTorch 2.5 or newer; use a runtime-appropriate PyTorch build.
+2. Run `src/smoke_test_modern_generation.py` on a GPU runtime. It checks model loading, finite causal-LM loss, `all-linear` LoRA injection, finite gradients and one synthetic optimizer step, adapter save/reload, and text generation. This is a compatibility check, not evidence of learning or an evaluation result.
+3. Run the GPT-2 fold-1 baseline as a pipeline pilot and time the complete run. Do not promise a fixed free-Colab runtime.
+4. If the smoke test succeeds, lock the Qwen3.5 model revision and record package versions/device in the experiment metadata. If its hybrid architecture or PEFT target discovery is unstable, fall back to Qwen3-0.6B-Base and document the change.
+5. Run fold-1 Qwen prompt-control and LoRA arms from the same base revision and same training-book boundary.
+6. Add fold-specific attribution scoring and collect the small blind human subset.
+7. Expand the corpus, then run all book folds and reserve newly acquired books for a fresh final external check before publishing resume figures.
 
 ## Resume reporting rule
 
