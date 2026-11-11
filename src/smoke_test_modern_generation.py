@@ -57,6 +57,7 @@ def main() -> None:
     import peft
     from peft import LoraConfig, PeftModel, get_peft_model
     from transformers import AutoModelForCausalLM, AutoTokenizer
+    from huggingface_hub import snapshot_download
 
     torch_version = torch.__version__.split("+", maxsplit=1)[0]
     major, minor = (int(part) for part in torch_version.split(".")[:2])
@@ -89,7 +90,13 @@ def main() -> None:
         f"torch={torch.__version__} transformers={transformers.__version__} peft={peft.__version__}"
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model, revision=args.revision)
+    # Resolve mutable refs such as "main" once, then load tokenizer and weights
+    # from that exact cached snapshot. The snapshot directory name is the commit SHA.
+    model_snapshot = Path(snapshot_download(repo_id=args.model, revision=args.revision))
+    resolved_revision = model_snapshot.name
+    print(f"Resolved model revision: {resolved_revision}")
+
+    tokenizer = AutoTokenizer.from_pretrained(model_snapshot)
     if tokenizer.eos_token_id is None:
         raise RuntimeError("Selected tokenizer has no EOS token; cannot configure causal-LM padding.")
     if tokenizer.pad_token_id is None:
@@ -98,8 +105,7 @@ def main() -> None:
     # FP32 is intentional for this tiny one-step compatibility check. It avoids
     # conflating adapter support with low-precision overflow on a T4-class GPU.
     model = AutoModelForCausalLM.from_pretrained(
-        args.model,
-        revision=args.revision,
+        model_snapshot,
         dtype=torch.float32,
     ).to(device)
     model.config.use_cache = False
@@ -156,8 +162,7 @@ def main() -> None:
             torch.cuda.empty_cache()
 
         base = AutoModelForCausalLM.from_pretrained(
-            args.model,
-            revision=args.revision,
+            model_snapshot,
             dtype=torch.float32,
         ).to(device)
         reloaded = PeftModel.from_pretrained(base, adapter_dir).eval()
@@ -178,7 +183,7 @@ def main() -> None:
         "status": "passed",
         "model": args.model,
         "requested_revision": args.revision,
-        "resolved_revision": getattr(tokenizer, "_commit_hash", None),
+        "resolved_revision": resolved_revision,
         "torch": torch.__version__,
         "transformers": transformers.__version__,
         "peft": peft.__version__,
