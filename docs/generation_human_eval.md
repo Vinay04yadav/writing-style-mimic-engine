@@ -38,6 +38,18 @@ python src/summarize_generation_ratings.py --ratings results/generation_baseline
 
 This reports mean rubric scores and, for fine-tuned models only, the fraction of author guesses matching the fine-tuned author. It treats reviewer rows as observations and does not correct for reviewer agreement or the repeated prompts; interpret the summary descriptively. Report sample count, reviewer count, prompt set, model/fold, and deviations from the settings alongside any numbers.
 
+## Qwen prompt-versus-LoRA packet
+
+The Qwen experiment creates `results/generation_baseline/qwen35/fold_<n>/human_eval_packet.csv`, a separate `human_eval_key.csv`, and an empty `human_ratings_template.csv`. The packet is balanced across `qwen_fewshot` and `qwen_author_lora`: two prompts per target author per arm (20 samples for five authors). The arm and target author are hidden from the packet; do not open the key until rating is finished. Copy the template to `human_ratings_completed.csv` in the same directory, fill one row per reviewer/sample, then summarize with:
+
+```bash
+python src/summarize_generation_ratings.py \
+  --directory results/generation_baseline/qwen35/fold_1 \
+  --ratings results/generation_baseline/qwen35/fold_1/human_ratings_completed.csv
+```
+
+The summarizer supports both the GPT-2 `model_author` key and the Qwen `arm`/`target_author` key. Qwen ratings compare the frozen few-shot system and author adapter; both have target authors, so attribution accuracy is calculated for both arms. Treat this 20-sample, two-reviewer result as a descriptive pilot.
+
 ## Data handling
 
 Generated samples, the blind key, and human ratings are ignored by Git. Keep the key private until review is complete. Track the protocol and scripts; do not commit generated passages or the key.

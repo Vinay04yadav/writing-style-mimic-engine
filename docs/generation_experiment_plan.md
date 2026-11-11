@@ -20,6 +20,7 @@ Qwen3.5-0.8B-Base is selected as the current small open-weight candidate because
 
 - Use the existing complete-book folds. For fold *k*, train author models and build few-shot examples from that author's other books only; evaluate on the held-out book.
 - Use fold 1 for the initial pipeline pilot. For a headline estimate, run all five folds after adding more balanced books per author as already planned. The ten current external-validation books remain untouched and are not training or prompt examples.
+- Use a fixed epoch count for each pilot. The held-out fold book is scored only after training and must not be used to select a checkpoint or epoch; tune schedules on training-book-only inner splits if tuning is later needed.
 - Keep the generation prompt topics fixed across arms. The prompt-control examples, LoRA training examples, and GPT-2 training text must come only from that fold's training books.
 - Record the model revision, library versions, split IDs, random seeds, token/block settings, LoRA settings, decoding parameters, and hardware/runtime for every run.
 - Public-domain text may have appeared in foundation-model pretraining. Book-held-out splitting prevents leakage from this project's own fine-tuning data; it cannot establish that pretrained models never saw a test work. State this limitation and do not interpret a low loss as proof that the model learned author style rather than recalled text.
@@ -40,7 +41,7 @@ Use identical prompts and decoding settings wherever the interface permits. Beca
 2. Run `src/smoke_test_modern_generation.py` on a GPU runtime. It checks model loading, finite causal-LM loss, `all-linear` LoRA injection, finite gradients and one synthetic optimizer step, adapter save/reload, and text generation. This is a compatibility check, not evidence of learning or an evaluation result.
 3. Run the GPT-2 fold-1 baseline as a pipeline pilot and time the complete run. Do not promise a fixed free-Colab runtime.
 4. If the smoke test succeeds, lock the Qwen3.5 model revision and record package versions/device in the experiment metadata. If its hybrid architecture or PEFT target discovery is unstable, fall back to Qwen3-0.6B-Base and document the change.
-5. Run fold-1 Qwen prompt-control and LoRA arms from the same base revision and same training-book boundary.
+5. Run `src/run_qwen_generation_experiment.py --mode all --fold 1 --epochs 1` as the initial Qwen pilot. It trains one fixed epoch, scores the base and five author adapters on the held-out books, generates two modern arms on shared topics, and creates a balanced blind packet. Do not interpret the one-epoch pilot as a tuned result.
 6. Add fold-specific attribution scoring and collect the small blind human subset.
 7. Expand the corpus, then run all book folds and reserve newly acquired books for a fresh final external check before publishing resume figures.
 

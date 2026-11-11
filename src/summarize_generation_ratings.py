@@ -29,8 +29,11 @@ def main() -> None:
     ratings, key_rows = read_csv(ratings_path), read_csv(key_path)
     if not ratings:
         raise ValueError(f"No ratings found in {ratings_path}; fill a copy of the template first.")
-    key = {row["sample_id"]: row["model_author"] for row in key_rows}
-    allowed_guesses = set(key.values()) - {"base_gpt2"}
+    key = {row["sample_id"]: row for row in key_rows}
+    allowed_guesses = {
+        row.get("target_author", "") or row.get("model_author", "")
+        for row in key.values()
+    } - {"base_gpt2", ""}
     allowed_guesses.add("unsure")
     grouped = defaultdict(list)
     for row in ratings:
@@ -42,20 +45,23 @@ def main() -> None:
                 score = int(row[column])
                 if score < 1 or score > 5:
                     raise ValueError(f"{column} must be between 1 and 5 (sample {sample_id}).")
-        author = key[sample_id]
+        identity = key[sample_id]
+        arm = identity.get("arm") or identity.get("model_author", "unknown")
+        author = identity.get("target_author") or identity.get("model_author", "")
         guess = row.get("attribution_guess", "").strip()
         if guess and guess not in allowed_guesses:
             raise ValueError(
                 f"Unknown attribution_guess {guess!r}; use one of "
                 f"{sorted(allowed_guesses)}."
             )
-        row["_model_author"] = author
-        grouped[author].append(row)
+        row["_arm"] = arm
+        row["_target_author"] = author
+        grouped[(arm, author)].append(row)
 
     result = []
-    for author in sorted(grouped):
-        group = grouped[author]
-        out = {"model_author": author, "ratings": len(group),
+    for arm, author in sorted(grouped):
+        group = grouped[(arm, author)]
+        out = {"arm": arm, "target_author": author, "ratings": len(group),
                "unique_samples_rated": len({r['sample_id'] for r in group})}
         for column in SCORE_COLUMNS:
             values = [int(r[column]) for r in group if r.get(column, "").strip()]
@@ -63,10 +69,9 @@ def main() -> None:
         guesses = [r.get("attribution_guess", "").strip() for r in group
                    if r.get("attribution_guess", "").strip()]
         out["attribution_guesses"] = len(guesses)
-        # The base model has no intended author; only fine-tuned outputs have a correct label.
         out["attribution_accuracy"] = (
             f"{sum(guess == author for guess in guesses) / len(guesses):.3f}"
-            if guesses and author != "base_gpt2" else ""
+            if guesses and author and author != "base_gpt2" else ""
         )
         result.append(out)
 

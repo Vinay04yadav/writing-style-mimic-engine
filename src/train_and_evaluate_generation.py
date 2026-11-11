@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import inspect
 import json
 import math
 from pathlib import Path
@@ -80,11 +81,15 @@ def read_assignments() -> tuple[list[dict], list[str], list[int]]:
     return rows, authors, fold_ids
 
 
-def training_arguments(args, output_dir: Path, *, evaluate: bool) -> TrainingArguments:
-    return TrainingArguments(
+def training_arguments(args, output_dir: Path) -> TrainingArguments:
+    strategy_name = (
+        "eval_strategy"
+        if "eval_strategy" in inspect.signature(TrainingArguments.__init__).parameters
+        else "evaluation_strategy"
+    )
+    values = dict(
         output_dir=str(output_dir),
-        evaluation_strategy="epoch" if evaluate else "no",
-        save_strategy="epoch" if evaluate else "no",
+        save_strategy="no",
         learning_rate=args.learning_rate,
         weight_decay=0.01,
         warmup_ratio=0.03,
@@ -92,10 +97,7 @@ def training_arguments(args, output_dir: Path, *, evaluate: bool) -> TrainingArg
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.eval_batch_size,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
-        load_best_model_at_end=evaluate,
-        metric_for_best_model="eval_loss" if evaluate else None,
-        greater_is_better=False,
-        save_total_limit=1,
+        load_best_model_at_end=False,
         logging_steps=100,
         report_to="none",
         seed=SEED,
@@ -103,22 +105,23 @@ def training_arguments(args, output_dir: Path, *, evaluate: bool) -> TrainingArg
         fp16=torch.cuda.is_available(),
         dataloader_num_workers=0,
     )
+    values[strategy_name] = "no"
+    return TrainingArguments(**values)
 
 
-def make_trainer(model, tokenizer, dataset, args, output_dir: Path, *, evaluate: bool):
+def make_trainer(model, dataset, args, output_dir: Path, *, evaluate: bool):
     return Trainer(
         model=model,
-        args=training_arguments(args, output_dir, evaluate=evaluate),
+        args=training_arguments(args, output_dir),
         data_collator=default_data_collator,
         train_dataset=dataset if not evaluate else None,
         eval_dataset=dataset if evaluate else None,
-        tokenizer=tokenizer,
     )
 
 
 def score_perplexity(model, tokenizer, dataset, args, output_dir: Path) -> float:
     trainer = make_trainer(
-        model, tokenizer, dataset, args, output_dir, evaluate=True
+        model, dataset, args, output_dir, evaluate=True
     )
     loss = float(trainer.evaluate()["eval_loss"])
     del trainer
@@ -147,28 +150,33 @@ def train_author_model(author, fold_id, train_rows, validation_row, tokenizer, a
     model_path.mkdir(parents=True, exist_ok=True)
 
     train_dataset = CausalBookBlocks(train_rows, tokenizer, args.block_size)
-    validation_dataset = CausalBookBlocks([validation_row], tokenizer, args.block_size)
     model = AutoModelForCausalLM.from_pretrained(args.model_checkpoint)
     model.config.pad_token_id = tokenizer.pad_token_id
     model.config.use_cache = False
     trainer = Trainer(
         model=model,
-        args=training_arguments(args, model_path, evaluate=True),
+        args=training_arguments(args, model_path),
         data_collator=default_data_collator,
         train_dataset=train_dataset,
-        eval_dataset=validation_dataset,
-        tokenizer=tokenizer,
     )
 
+    fixed_schedule_note = (
+        "The held-out book is never used for epoch/checkpoint selection. "
+        "Train for the configured fixed epoch count and evaluate only afterward."
+    )
     print(
         f"Training {author}: {len(train_rows)} books, {len(train_dataset):,} blocks; "
-        f"validation={validation_row['title']} ({len(validation_dataset):,} blocks)."
+        f"held-out evaluation={validation_row['title']} after {args.epochs} fixed epochs."
     )
     trainer.train()
     model.config.use_cache = True
     trainer.save_model(str(model_path))
     tokenizer.save_pretrained(model_path)
-    final_metrics = trainer.evaluate()
+    del trainer
+    validation_dataset = CausalBookBlocks([validation_row], tokenizer, args.block_size)
+    final_perplexity = score_perplexity(
+        model, tokenizer, validation_dataset, args, model_path / "heldout_eval"
+    )
     metadata = {
         "author": author,
         "fold": fold_id,
@@ -179,21 +187,21 @@ def train_author_model(author, fold_id, train_rows, validation_row, tokenizer, a
             {"gutenberg_id": int(row["gutenberg_id"]), "title": row["title"]}
             for row in train_rows
         ],
-        "validation_book": {
+        "heldout_evaluation_book": {
             "gutenberg_id": int(validation_row["gutenberg_id"]),
             "title": validation_row["title"],
         },
         "training_blocks": len(train_dataset),
-        "validation_blocks": len(validation_dataset),
-        "validation_tokens_scored": validation_dataset.token_count,
-        "best_checkpoint": trainer.state.best_model_checkpoint,
-        "final_eval_loss": float(final_metrics["eval_loss"]),
-        "final_perplexity": math.exp(float(final_metrics["eval_loss"])),
+        "heldout_evaluation_blocks": len(validation_dataset),
+        "heldout_evaluation_tokens_scored": validation_dataset.token_count,
+        "checkpoint_selection": "fixed_epochs_no_heldout_selection",
+        "evaluation_note": fixed_schedule_note,
+        "final_perplexity": final_perplexity,
     }
     (model_path / "training_summary.json").write_text(
         json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
     )
-    del trainer, model, train_dataset, validation_dataset
+    del model, train_dataset, validation_dataset
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
     return model_path
