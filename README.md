@@ -88,6 +88,7 @@ This project explores two tasks: identifying an author's writing from a passage 
     python src/smoke_test_modern_generation.py --device cuda
     ```
     This downloads Qwen3.5-0.8B-Base, checks a text-only forward pass, performs one synthetic LoRA optimizer step, then checks adapter save/reload and generation. It writes version/device metadata to the ignored `results/generation_baseline/qwen35_smoke_summary.json`. It does not use project books or produce evaluation metrics. Keep this environment separate from `requirements.txt`, whose older pins support the existing authorship pipeline. See [`docs/generation_experiment_plan.md`](docs/generation_experiment_plan.md) before running full experiments.
+    If Colab reports an old preinstalled `torchao` (for example 0.10.0), this smoke test does not need it. Run `!pip uninstall -y torchao`, restart the runtime, return to the cloned project folder, and rerun the smoke test. The script checks for this conflict before downloading model weights. The `causal_conv1d` and `flash-linear-attention` fallback messages are performance warnings; the model can use its reference PyTorch implementations for this smoke test.
 12. **Prepare a blind generation-quality review** after the required model arms exist:
     ```bash
     python src/generate_style_eval_samples.py --fold 1

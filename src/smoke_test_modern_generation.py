@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import gc
+import importlib.metadata
 import json
 import tempfile
 from pathlib import Path
@@ -64,6 +65,21 @@ def main() -> None:
             f"This isolated environment needs PyTorch >=2.5; found {torch.__version__}. "
             "Do not upgrade the main project environment. Use a separate venv or Colab runtime."
         )
+
+    try:
+        torchao_version = importlib.metadata.version("torchao")
+    except importlib.metadata.PackageNotFoundError:
+        torchao_version = None
+    if torchao_version is not None:
+        from packaging.version import Version
+
+        if Version(torchao_version) < Version("0.16.0"):
+            raise RuntimeError(
+                f"Found torchao {torchao_version}, which conflicts with PEFT {peft.__version__} "
+                "during ordinary LoRA setup. This smoke test does not use torchao; in Colab run "
+                "`!pip uninstall -y torchao`, restart the runtime, return to the project folder, "
+                "and rerun this script."
+            )
 
     device = choose_device(args.device, torch)
     if device.type == "cpu":
