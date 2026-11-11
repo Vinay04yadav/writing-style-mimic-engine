@@ -143,7 +143,8 @@ def fixed_training_args(args, author_output: Path) -> TrainingArguments:
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         learning_rate=args.learning_rate,
         weight_decay=0.01,
-        warmup_ratio=0.03,
+        # Transformers v5.2 removed warmup_ratio; a float below 1 is the ratio.
+        warmup_steps=0.03,
         logging_steps=50,
         report_to="none",
         seed=SEED,
